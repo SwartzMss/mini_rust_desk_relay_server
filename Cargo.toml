@@ -1,0 +1,32 @@
+[package]
+name = "mini_rust_desk_relay_server"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+mini_rust_desk_common = { git = "https://github.com/SwartzMss/mini_rust_desk_common", rev = "5bb3eb3540598a97555264f5b25ba037ece1ea49"}
+flexi_logger = { version = "0.22", features = ["async", "use_chrono_for_offset", "dont_minimize_extra_stacks"] }
+serde_derive = "1.0"
+serde = "1.0"
+serde_json = "1.0"
+lazy_static = "1.4"
+clap = "2"
+rust-ini = "0.18"
+sodiumoxide = "0.2"
+anyhow = "1.0"
+whoami = "1.2"
+base64 = "0.13"
+sqlx = { version = "0.6", features = [ "runtime-tokio-rustls", "sqlite", "macros", "chrono", "json" ] }
+deadpool = "0.8"
+async-trait = "0.1"
+uuid = { version = "1.0", features = ["v4"] }
+axum = { version = "0.5", features = ["headers"] }
+bytes = { version = "1.2", features = ["serde"] }
+futures-util = "0.3"
+futures = "0.3"
+ipnetwork = "0.20"
+tokio-tungstenite = "0.17"
+tungstenite = "0.17"
+local-ip-address = "0.5.1"
+async-speed-limit = { git = "https://github.com/open-trade/async-speed-limit" }
