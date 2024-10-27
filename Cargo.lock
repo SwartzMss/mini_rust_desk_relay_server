@@ -1183,7 +1183,7 @@ checksum = "6877bb514081ee2a7ff5ef9de3281f14a4dd4bceac4c09388074a6b5df8a139a"
 [[package]]
 name = "mini_rust_desk_common"
 version = "0.1.0"
-source = "git+https://github.com/SwartzMss/mini_rust_desk_common?rev=a29a0ea3c1dc2bef41554e45d8ea6cdebbda2f33#a29a0ea3c1dc2bef41554e45d8ea6cdebbda2f33"
+source = "git+https://github.com/SwartzMss/mini_rust_desk_common?rev=399026302bc21ccbf6b949156608363b984e4e9b#399026302bc21ccbf6b949156608363b984e4e9b"
 dependencies = [
  "anyhow",
  "base64 0.22.1",
@@ -1198,6 +1198,7 @@ dependencies = [
  "futures-util",
  "httparse",
  "lazy_static",
+ "libc",
  "log",
  "mac_address",
  "machine-uid",
