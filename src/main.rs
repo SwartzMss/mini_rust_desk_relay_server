@@ -5,7 +5,7 @@ use mini_rust_desk_common::ResultType;
 use relay_server::*;
 
 fn main() -> ResultType<()> {
-    let _logger = Logger::try_with_env_or_str("info")?
+    let _logger = Logger::try_with_env_or_str("debug")?
         .log_to_stdout()
         .format(opt_format)
         .write_mode(WriteMode::Async)
