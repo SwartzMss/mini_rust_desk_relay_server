@@ -7,7 +7,6 @@ mini_rust_desk_relay_server 是 客户端之间实现无缝远程连接的关键
 ## 特点
 
 - **中继连接**：使网络连接能够绕过 NAT 和防火墙限制。
-- **WebSocket 支持**：提供对 WebSocket 连接的支持，增强与 Web 客户端的兼容性。
 
 
 ### 命令行参数
@@ -20,6 +19,7 @@ mini_rust_desk_relay_server 是 客户端之间实现无缝远程连接的关键
 - 316.221.16.199是被控制方
 - 后面的话就是数据单纯的转发
 
+``` log
 [2024-11-10 15:06:08.745215 +08:00] INFO [src\relay_server.rs:93]  relay request RequestRelay {
     id: "417866831",
     uuid: "429908f3-3e62-43d9-8d3a-ca3c3e9513b4",
@@ -59,3 +59,4 @@ mini_rust_desk_relay_server 是 客户端之间实现无缝远程连接的关键
 } from [::ffff:316.221.16.199]:54690
 [2024-11-10 15:06:08.806778 +08:00] INFO [src\relay_server.rs:100] Relayrequest 429908f3-3e62-43d9-8d3a-ca3c3e9513b4 from [::ffff:316.221.16.199]:54690 got paired
 [2024-11-10 15:06:20.322177 +08:00] INFO [src\relay_server.rs:105] Relay of [::ffff:316.221.16.199]:54690 closed
+```
